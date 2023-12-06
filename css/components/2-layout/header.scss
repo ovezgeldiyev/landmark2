@@ -1,0 +1,222 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: $white;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    box-shadow: 0px 4px 4px 0px #00000021;
+    .header__inner {
+      padding: 20px 0;
+    }
+  }
+  &__inner {
+    padding: 39px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      img {
+        width: 100%;
+      }
+    }
+    &-side {
+      display: flex;
+      align-items: center;
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:last-child {
+          margin: 0;
+        }
+        & > a {
+          &:hover {
+            opacity: 1;
+            color: $primary-dark;
+          }
+        }
+        a {
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 100%;
+          font-weight: 700;
+          color: $black;
+          font-family: $raleway;
+          padding: 5px;
+        }
+      }
+      .dropdown {
+        position: relative;
+        &:hover {
+          .dropdown__menu {
+            visibility: visible;
+            opacity: 1;
+          }
+          & > a {
+            color: $primary-dark;
+            span {
+              &::after {
+                opacity: 0;
+              }
+            }
+          }
+        }
+        & > a {
+          display: flex;
+          align-items: flex-start;
+          span {
+            width: 12px;
+            height: 12px;
+            position: relative;
+            top: 50%;
+            right: 0;
+            margin: 0 0 0 5px;
+            &::before {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: $primary-dark;
+              content: "";
+              transform: translateY(-50%);
+            }
+            &::after {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              width: 2px;
+              height: 100%;
+              background-color: $primary-dark;
+              content: "";
+              transform: translateX(-50%);
+              transition: .3s ease;
+            }
+          }
+      
+        }
+        &__menu {
+          padding: 17px 7px;
+          background-color: $white;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          min-width: 310px;
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+          visibility: hidden;
+          transition: .3s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          opacity: 0;
+          a {
+            width: 100%;
+            color: $main;
+            border-radius: 4px;
+            padding: 18px 36px 10px;
+            text-transform: capitalize;
+            font-weight: 400;
+            &:first-child {
+              padding: 18px 18px 10px;
+            }
+            &:hover {
+              opacity: 1;
+              background-color: #f8f3ec;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 1380px
+@mixin header-xxxlg-xxxxlg {
+  .header {
+    &__inner {
+      padding: 25px 0;
+      &-logo {
+        width: 200px;
+      }
+      &-links {
+        li {
+          margin-right: 12px;
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// 1180px
+@mixin header-xlg-xxlg {
+  .header {
+    &__inner {
+      &-logo {
+        width: 160px;
+      }
+      &-links {
+        li {
+          margin-right: 8px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+  .header {
+    &__inner {
+      &-links {
+        display: none;
+      }
+      .burger {
+        margin: 0;
+      }
+    }
+  }
+}
+// 540px
+@mixin header-xsm-sm {
+  .header {
+    &__inner {
+      padding: 20px 0;
+      &-logo {
+        width: 140px;
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

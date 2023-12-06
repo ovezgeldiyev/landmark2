@@ -1,0 +1,69 @@
+.contact {
+  padding: 80px 0;
+  &.big {
+    background-color: $main;
+    color: $white;
+    padding: 110px 0;
+    .contact__inner {
+      flex-direction: row;
+      text-align: start;
+      &-content {
+        width: calc(65% - 10px);
+        margin: 0;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    &-content {
+      margin-bottom: 40px;
+    }
+  }
+}
+// 1180px
+@mixin contact-xlg-xxlg {
+  .contact {
+    &.big {
+      padding: 70px 0;
+    }
+    padding: 45px 0;
+  }
+}
+// 930px
+@mixin contact-md-lg {
+  .contact {
+    &.big {
+      padding: 55px 0;
+    }
+    padding: 40px 0;
+  }
+}
+// 750px
+@mixin contact-sm-md {
+  .contact {
+    padding: 20px 0;
+    &.big {
+      padding: 45px 0;
+      .contact__inner {
+        flex-direction: column;
+        &-content {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &__inner {
+      &-content {
+        margin-bottom: 24px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

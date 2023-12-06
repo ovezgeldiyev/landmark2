@@ -1,0 +1,405 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include intro-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1 {
+    font-size: 85px;
+  }
+  h2 {
+    font-size: 55px;
+    &.big {
+      font-size: 60px;
+    }
+    &.sm {
+      font-size: 50px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+    &.big {
+      font-size: 30px;
+    }
+    &.mid {
+      font-size: 24px;
+    }
+    &.sm {
+      font-size: 18px;
+    }
+  }
+  .main {
+    padding-top: 98.94px;
+  }
+  @include header-xxxlg-xxxxlg;
+  @include intro-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include intro-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 50px;
+    &.big {
+      font-size: 55px;
+    }
+    &.sm {
+      font-size: 45px;
+    }
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+    &.big {
+      font-size: 26px;
+    }
+    &.mid {
+      font-size: 22px;
+    }
+    &.sm {
+      font-size: 16px;
+    }
+  }
+  .button {
+    &.primary {
+      padding: 30px 60px;
+      font-size: 30px;
+    }
+  }
+  .main {
+    padding-top: 89.14px;
+  }
+  .modall {
+    &__inner {
+      padding: 80px 50px 40px;
+      &-content {
+        margin-bottom: 30px;
+      }
+      ul {
+        li {
+          padding-left: 18px;
+          margin-bottom: 15px;
+          b {
+            &::before {
+              width: 6px;
+              height: 6px;
+              left: -18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include intro-xlg-xxlg;
+  @include header-xlg-xxlg;
+  @include contact-xlg-xxlg;
+  @include work-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 45px;
+    &.big {
+      font-size: 50px;
+    }
+    &.sm {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    &.big {
+      font-size: 22px;
+    }
+    &.mid {
+      font-size: 20px;
+    }
+  }
+  .arrow {
+    width: 50px;
+    height: 50px;
+  }
+  @include intro-lg-xlg;
+  @include nav-lg-xlg;
+  @include header-lg-xlg;
+  @include magic-lg-xlg;
+  @include work-lg-xlg;
+  @include solutions-lg-xlg;
+  @include footer-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+    &.big {
+      font-size: 45px;
+    }
+    &.sm {
+      font-size: 35px;
+    }
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .button {
+    &.primary {
+      padding: 20px 35px;
+      font-size: 25px;
+      border-radius: 16px;
+    }
+  }
+  .counter {
+    padding: 10px 0 40px;
+  }
+  .modall {
+    &__inner {
+      padding: 65px 35px 30px;
+      &-content {
+        margin-bottom: 30px;
+      }
+      &-row {
+        margin: 0 -5px;
+      }
+    }
+    &Close {
+      width: 26px;
+      height: 26px;
+      top: 22px;
+      right: 22px;
+    }
+    &Item {
+      margin: 5px;
+      width: calc(50% - 10px);
+    }
+  }
+  @include intro-md-lg;
+  @include explore-md-lg;
+  @include contact-md-lg;
+  @include work-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+    &.big {
+      font-size: 40px;
+    }
+    &.sm {
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 16px;
+    &.big {
+      font-size: 18px;
+    }
+    &.mid {
+      font-size: 18px;
+    }
+    &.sm {
+      font-size: 14px;
+    }
+  }
+  .main {
+    &__bg {
+      display: none;
+    }
+  }
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .modall {
+    &__inner {
+      padding: 60px 25px 25px;
+      &-content {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @include nav-sm-md;
+  @include intro-sm-md;
+  @include magic-sm-md;
+  @include contact-sm-md;
+  @include solutions-sm-md;
+  @include footer-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  .modall {
+    padding: 0;
+    &__inner {
+      padding: 50px 20px 30px;
+      border-radius: 0;
+      min-height: 100%;
+      &-content {
+        margin-bottom: 24px;
+      }
+      &-row {
+        flex-direction: column;
+      }
+      h2 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 24px;
+      }
+      ul {
+        li {
+          padding-left: 14px;
+          margin-bottom: 10px;
+          b {
+            &::before {
+              width: 5px;
+              height: 5px;
+              left: -14px;
+            }
+          }
+        }
+      }
+    }
+    &Close {
+      width: 20px;
+      height: 20px;
+      top: 18px;
+      right: 18px;
+      &::before {
+        height: 3px;
+      }
+      &::after {
+        height: 3px;
+      }
+    }
+    &Item {
+      width: 100%;
+      margin: 0 0 15px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  @include intro-sm-md-extra;
+  @include explore-sm-md-extra;
+  @include work-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+    &.big {
+      font-size: 30px;
+    }
+    &.sm {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    &.big {
+      font-size: 16px;
+    }
+    &.mid {
+      font-size: 16px;
+    }
+    &.sm {
+      font-size: 13px;
+    }
+  }
+  .main {
+    padding-top: 74.49px;
+  }
+  .button {
+    padding: 10px 22px 4px;
+    font-size: 16px;
+    line-height: 100%;
+    &.primary {
+      padding: 15px 25px;
+      font-size: 20px;
+      border-radius: 12px;
+    }
+  }
+  .counter {
+    padding: 10px 0 30px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      &.big {
+        font-size: 14px;
+      }
+    }
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include intro-xsm-sm;
+  @include magic-xsm-sm;
+  @include work-xsm-sm;
+  @include solutions-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  @include intro-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include intro-xxxsm-xxsm;
+}
